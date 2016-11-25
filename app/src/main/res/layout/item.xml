@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/ajouimage"
+        android:id="@+id/profile_imageview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nickname_textview"
+        android:layout_below="@+id/profile_imageview"
+        android:layout_alignRight="@+id/profile_imageview"
+        android:layout_alignEnd="@+id/profile_imageview" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/profile_imageview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_textview" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_textview" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_textview" />
+    </LinearLayout>
+
+</RelativeLayout>
